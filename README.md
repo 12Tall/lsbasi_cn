@@ -15,4 +15,4 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 - [x] [前言](00前言.md)  
 - [x] [01_二元加法器](01_二元加法器.md)  
 - [x] [02_加减运算](02_加减运算.md)  
-- [x] [03_综合运算](03_综合运算.md)
+- [ ] [03_综合运算](03_综合运算.md)
