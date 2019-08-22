@@ -17,5 +17,5 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 - [x] [02_加减运算](02_加减运算.md)  
 - [x] [03_多元运算](03_多元运算.md)  
 - [x] [04_上下文无关语法](04_上下文无关语法.md)  
-- [ ] [05_综合运算](05_综合运算.md)  
+- [ ] [05_结合性与优先级](05_结合性与优先级.md)  
 
