@@ -13,7 +13,9 @@ function Token(type, value) {
 
 Token.INTEGER = "INTEGER";
 Token.PLUS = "PLUS";
+Token.MINUS = "MINUS";
 Token.EOF = "EOF";
+
 module.exports = {
     Token
 }

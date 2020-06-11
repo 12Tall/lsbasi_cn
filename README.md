@@ -14,7 +14,7 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 
 - [x] [00_前言](lsbasi_cn/00_前言.md)  
 - [x] [01_初识解释器_构造简单的加法器](lsbasi_cn/01_初识解释器_构造简单的加法器.md)  
-- [ ] 02_语法分析  
+- [x] [02_解析器_加减法运算](lsbasi_cn/02_解析器_加减法运算.md)   
 - [ ] 03_  
 - [ ] 04_  
 - [ ] 05_  

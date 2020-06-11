@@ -3,12 +3,21 @@ function Parser(text) {
     self = this;
     this.lexer = new Lexer(text);
 
+
     this.expr = function () {
         let left = self.lexer.get_token(Token.INTEGER),
-            op = self.lexer.get_token(Token.PLUS),
+            op = self.lexer.get_next_token(),
             right = self.lexer.get_token(Token.INTEGER);
 
-        return parseInt(left.value) + parseInt(right.value);
+        switch (op.type) {
+            case Token.PLUS:
+                return parseInt(left.value) + parseInt(right.value);
+            case Token.MINUS:
+                return parseInt(left.value) - parseInt(right.value);
+            default: break;
+        }
+
+        throw 'operator error'
     }
 
 
