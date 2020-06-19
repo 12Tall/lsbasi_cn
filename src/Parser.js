@@ -3,34 +3,69 @@ const { Token, Lexer, Gexer } = require('./Lexer')
 function Garser(text) {
     var gexer = Gexer(text);
     var curren_token;
-
-    var result = term().value;
-
-    while (curren_token.type !== Token.EOF) {
-        switch (curren_token.type) {
-            case Token.PLUS:
-                result += term().value;
-                break;
-            case Token.MINUS:
-                result -= term().value;
-                break;
-            default:
-                throw "语法错误";
-        }
-
-    }
+    var result;
     
-    return result;
+    return phase()
 
 
 
     // --------------局部方法--------------- //
+
+     /**
+     * @function phase 获取最低优先级运算
+     * @description
+     * --> term --> [*|/ --> term] -->
+     *             \--------<------/
+     */
+    function phase() {
+        var result = term();
+        while ([Token.PLUS, Token.MINUS].indexOf(curren_token.type) >= 0) {
+            switch (curren_token.type) {
+                case Token.PLUS:
+                    result += term();
+                    break;
+                case Token.MINUS:
+                    result -= term();
+                    break;
+                default:
+                    throw "语法错误";
+            }
+        }
+        return result
+    }
+    /**
+     * @function term 获取次级运算
+     * @description
+     * --> factor --> [*|/ --> factor] -->
+     *             \--------<-------/
+     */
     function term() {
-        // 目前为止，term() 只是返回一个整数Token 即可
+        var result = factor();
+        while ([Token.MUL, Token.DIV].indexOf(curren_token.type) >= 0) {
+            switch (curren_token.type) {
+                case Token.MUL:
+                    result *= factor();
+                    break;
+                case Token.DIV:
+                    result /= factor();
+                    break;
+                default:
+                    throw "语法错误";
+            }
+        }
+        return result;
+    }
+
+    /**
+     * @function factor 获取运算优先级最高的单位
+     * @description 目前为止是一个整数Token
+     * --> INTEGER -->
+     */
+    function factor() {
         var temp = curren_token = get_token();
         if (curren_token.type === Token.INTEGER) {
             curren_token = get_token();
-            return temp;
+            return temp.value;
         }
         throw "无效的term";
     }
@@ -78,5 +113,4 @@ module.exports = {
     Gexer,
     Token
 }
-
 

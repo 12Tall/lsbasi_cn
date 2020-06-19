@@ -68,10 +68,10 @@ function* Gexer(text) {
                 token = new Token(Token.MINUS, "-");
                 break;
             case "*":
-                token = new Token(Token.PLUS, "*");
+                token = new Token(Token.MUL, "*");
                 break;
             case "/":
-                token = new Token(Token.PLUS, "/");
+                token = new Token(Token.DIV, "/");
                 break;
         }
         return token;

@@ -34,6 +34,8 @@ function Token(type, value) {
 Token.INTEGER = "INTEGER";
 Token.PLUS = "PLUS";
 Token.MINUS = "MINUS";
+Token.MUL = "MUL";
+Token.DIV = "DIV";
 Token.EOF = "EOF";
 
 module.exports = {
