@@ -1,5 +1,5 @@
 const readline = require('readline'),
-    { Parser } = require('./Parser');
+    { Garser } = require('./Parser');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -9,8 +9,8 @@ const rl = readline.createInterface({
 process.stdout.write("calc> ");
 rl.on('line', str => {
     if (str !== 'exit') {
-        let parser = new Parser(str);
-        console.log(`${parser.expr()}`);        
+        let parser = Garser(str);
+        console.log(`${parser}`);        
         process.stdout.write("calc> ");
     } else {
         rl.close()

@@ -1,4 +1,4 @@
-# lsbasi_cn  
+README.md
 
 《一起构建一个简单的解释器》 中文翻译  
 Translation of 《Let’s Build A Simple Interpreter》 
@@ -12,10 +12,10 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 
 有很多地方难以找的合适的词来表示，给自己规划的进度是每周一到两篇，看起来还是很有难度的
 
-- [x] [00_前言](lsbasi_cn/00_前言.md)  
-- [x] [01_初识解释器_构造简单的加法器](lsbasi_cn/01_初识解释器_构造简单的加法器.md)  
-- [x] [02_解析器_加减法运算](lsbasi_cn/02_解析器_加减法运算.md)   
-- [ ] 03_  
+- [x] [00_前言](lsbasi_cn/00_%E5%89%8D%E8%A8%80.md)  
+- [x] [01_初识解释器_构造简单的加法器](lsbasi_cn/01_%E5%88%9D%E8%AF%86%E8%A7%A3%E9%87%8A%E5%99%A8_%E6%9E%84%E9%80%A0%E7%AE%80%E5%8D%95%E7%9A%84%E5%8A%A0%E6%B3%95%E5%99%A8.md)  
+- [x] [02_解析器_加减法运算](lsbasi_cn/02_%E8%A7%A3%E6%9E%90%E5%99%A8_%E5%8A%A0%E5%87%8F%E6%B3%95%E8%BF%90%E7%AE%97.md)  
+- [x] [03_语法分析_语法图](lsbasi_cn/03_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90_%E8%AF%AD%E6%B3%95%E5%9B%BE.md)  
 - [ ] 04_  
 - [ ] 05_  
 - [ ] 06_  
@@ -32,3 +32,4 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 - [ ] 17_调用栈与活动记录  
 - [ ] 18_执行过程调用  
 - [ ] 19_嵌套过程调用  
+
