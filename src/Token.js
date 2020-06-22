@@ -37,6 +37,8 @@ Token.MINUS = "MINUS";
 Token.MUL = "MUL";
 Token.DIV = "DIV";
 Token.EOF = "EOF";
+Token.L_P = "L_P";
+Token.R_P = "R_P";
 
 module.exports = {
     Token

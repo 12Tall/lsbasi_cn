@@ -73,6 +73,12 @@ function* Gexer(text) {
             case "/":
                 token = new Token(Token.DIV, "/");
                 break;
+            case "(":
+                token = new Token(Token.L_P, "(");
+                break;
+            case ")":
+                token = new Token(Token.R_P, ")");
+                break;
         }
         return token;
     }
@@ -164,5 +170,5 @@ function is_num(ch) {
 
 function is_op(ch) {
     // 目前仅支持四则运算
-    return ("+-*/").indexOf(ch) >= 0;
+    return ("+-*/()").indexOf(ch) >= 0;
 }

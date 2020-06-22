@@ -4,19 +4,20 @@ function Garser(text) {
     var gexer = Gexer(text);
     var curren_token;
     var result;
-    
+
     return phase()
 
 
 
     // --------------局部方法--------------- //
 
-     /**
-     * @function phase 获取最低优先级运算
-     * @description
-     * --> term --> [*|/ --> term] -->
-     *             \--------<------/
-     */
+    /**
+    * @function phase 获取最低优先级运算
+    * @description
+    * 已知问题：仅能计算出表达式正确部分的值 
+    * --> term --> [*|/ --> term] -->
+    *             \--------<------/
+    */
     function phase() {
         var result = term();
         while ([Token.PLUS, Token.MINUS].indexOf(curren_token.type) >= 0) {
@@ -30,7 +31,7 @@ function Garser(text) {
                 default:
                     throw "语法错误";
             }
-        }
+        }        
         return result
     }
     /**
@@ -53,6 +54,7 @@ function Garser(text) {
                     throw "语法错误";
             }
         }
+
         return result;
     }
 
@@ -66,6 +68,13 @@ function Garser(text) {
         if (curren_token.type === Token.INTEGER) {
             curren_token = get_token();
             return temp.value;
+        }
+        if (curren_token.type === Token.L_P) {
+            var result = phase()
+            if(curren_token.type === Token.R_P){
+                curren_token = get_token();
+                return result;
+            }
         }
         throw "无效的term";
     }
