@@ -17,7 +17,7 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 - [x] [02_解析器_加减法运算](../lsbasi_cn/02_%E8%A7%A3%E6%9E%90%E5%99%A8_%E5%8A%A0%E5%87%8F%E6%B3%95%E8%BF%90%E7%AE%97.md)  
 - [x] [03_语法分析_语法图](../lsbasi_cn/03_%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90_%E8%AF%AD%E6%B3%95%E5%9B%BE.md)  
 - [x] [04_上下文无关语法](../lsbasi_cn/04_%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E6%B3%95.md)  
-- [ ] [05_运算的优先级](../lsbasi_cn/05_%E8%BF%90%E7%AE%97%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7.md)  
+- [x] [05_运算的优先级](../lsbasi_cn/05_%E8%BF%90%E7%AE%97%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7.md)  
 - [ ] 06_  
 - [ ] 07_抽象语法树  
 - [ ] 08_  
