@@ -20,7 +20,7 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 - [x] [05_运算的优先级](./lsbasi_cn/05_运算的优先级.md)  
 - [x] [06_嵌套运算](./lsbasi_cn/06_表达式嵌套.md)  
 - [x] [07_抽象语法树](./lsbasi_cn/07_抽象语法树.md)  
-- [ ] 08_  
+- [x] [08_单目运算符](./lsbasi_cn/08_单目运算符.md)  
 - [ ] 09_  
 - [ ] 10_
 - [ ] 11_  
