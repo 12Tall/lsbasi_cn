@@ -23,7 +23,7 @@ Copyright belongs to the author([Ruslan Spivak](Logger.Instance.WriteException(e
 - [x] [08_单目运算符](./lsbasi_cn/08_单目运算符.md)  
 - [x] [09_Pascal语言](./lsbasi_cn/09_Pascal语言.md)  
 - [x] [10_完整的Pascal子集](./lsbasi_cn/10_完整的Pascal子集.md)
-- [ ] 11_符号表  
+- [x] [11_符号表管理](./lsbasi_cn/11_符号表管理.md)  
 - [ ] 12_  
 - [ ] 13_语义分析  
 - [ ] 14_嵌套作用域和源到源编译器  
