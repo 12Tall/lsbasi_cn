@@ -25,7 +25,7 @@ Copyright belongs to the author([Ruslan Spivak](https://ruslanspivak.com/)
 - [x] [10_完整的Pascal子集](./lsbasi_cn/10_完整的Pascal子集.md)
 - [x] [11_符号表管理](./lsbasi_cn/11_符号表管理.md)  
 - [x] [12_过程声明](./lsbasi_cn/12_过程声明.md)  
-- [ ] 13_语义分析  
+- [x] [13_语义分析](./lsbasi_cn/13_语义分析.md)
 - [ ] 14_嵌套作用域和源到源编译器  
 - [ ] 15_  
 - [ ] 16_认识过程调用  
