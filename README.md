@@ -33,3 +33,6 @@ Copyright belongs to the author([Ruslan Spivak](https://ruslanspivak.com/)
 - [ ] 18_执行过程调用  
 - [ ] 19_嵌套过程调用  
 
+
+-----  
+我想我应该感谢我的女朋友小芙同学，如果没有遇见她，这个系列大概在第七章就夭折掉了。是她让我有了努力进步的自信与勇气！（📅2022-07-04）
