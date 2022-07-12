@@ -27,7 +27,7 @@ Copyright belongs to the author([Ruslan Spivak](https://ruslanspivak.com/)
 - [x] [12_过程声明](./lsbasi_cn/12_过程声明.md)  
 - [x] [13_语义分析](./lsbasi_cn/13_语义分析.md)
 - [x] [14_嵌套的作用域与源到源的编译器](./lsbasi_cn/14_嵌套的作用域与源到源的编译器.md)  
-- [ ] 15_  
+- [x] [15_完善异常信息](./lsbasi_cn/15_完善异常信息.md)  
 - [ ] 16_认识过程调用  
 - [ ] 17_调用栈与活动记录  
 - [ ] 18_执行过程调用  
